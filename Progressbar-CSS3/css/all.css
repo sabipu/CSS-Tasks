@@ -1,0 +1,73 @@
+body{margin: 0;}
+#wrapper{
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #000;
+	height: 100px;
+	margin-top: 100px;
+	padding: 30px;
+}
+.progressbar{
+	margin-bottom: 20px;
+	background: #ccc;
+	height: 9px;
+	padding: 3px 5px;
+	border-radius: 4px;
+}
+.progressbar .bar{
+	display: block;
+	height: 100%;
+	background: #f00;
+	width: 0;
+	transition: width 1s linear;
+	-webkit-transition: width 1s linear;
+	-ms-transition: width 1s linear;
+}
+.progressbar.on-hover:hover .bar{
+	width: 100%;
+}
+.progressbar.fill .bar{
+	-webkit-animation: fill 3s linear forwards;
+	-moz-animation: fill 3s linear forwards;
+	animation: fill 3s linear forwards;
+}
+.progressbar.fill-color .bar{
+	animation: fill 3s linear forwards, color-change 1s  linear forwards 3.5s;
+	-webkit-animation: fill 3s linear forwards, color-change 1s  linear forwards 3.5s;
+	-moz-animation: fill 3s linear forwards, color-change 1s  linear forwards 3.5s;
+}
+
+@keyframes fill {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@-webkit-keyframes fill {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		background: #f00;
+	}
+	100% {
+		background: green;
+	}
+}
+@-webkit-keyframes color-change {
+	0% {
+		background: #f00;
+	}
+	100% {
+		background: green;
+	}
+}
