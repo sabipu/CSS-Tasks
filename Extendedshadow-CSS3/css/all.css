@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	background: #66a523;
+	font-family: 'Ubuntu', sans-serif;
+}
+#wrapper{
+	text-align: center;
+}
+.shadow{
+	font-size: 100px;
+	line-height: 120px;
+	font-weight: 700;
+	color: #fff;
+	padding: 100px 0 0;
+	text-shadow: 1px 1px #2d4f09,
+				2px 2px #30530a,
+				3px 3px #33580b,
+				4px 4px #365d0c,
+				5px 5px #38610d,
+				6px 6px #3b650d,
+				7px 7px #3d680e,
+				8px 8px #3e6b0f,
+				9px 9px #406e10,
+				10px 10px #427011,
+				11px 11px #447312,
+				12px 12px #467713,
+				13px 13px #487a13,
+				14px 14px #4a7d14,
+				15px 15px #4c8015,
+				16px 16px #4e8316,
+				17px 17px #508517,
+				18px 18px #518817,
+				19px 19px #548b19,
+				20px 20px #568e1a,
+				21px 21px #58911b,
+				22px 22px #5a941c,
+				23px 23px #5c971d,
+				24px 24px #5e9a1e,
+				25px 25px #609d20,
+				26px 26px #63a021,
+				27px 27px #64a322;
+}
