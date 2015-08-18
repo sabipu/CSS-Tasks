@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SVG Animation</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<div id="wrapper">
+		<svg version="1.1" id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="610px" height="600px" viewBox="0 0 610 600" style="enable-background:new 0 0 610 600;" xml:space="preserve">
+			<defs>
+				<style type="text/css">
+					.st0{fill:#FFFFFF;}
+					.st1{fill:none;stroke:#000000;stroke-width:42;}
+					.st2{fill:none;stroke:#ffffff;stroke-width:17.5;}
+					.st3{fill:none;stroke:#000000;stroke-width:42;stroke-linejoin:round;}
+					.st4{fill:none;stroke:#FFFFFF;stroke-width:17.5;stroke-linejoin:round;}
+					.st5{fill:#fff;stroke:#FFFFFF;stroke-width:6;}
+					
+					.first-ani{
+						stroke-dasharray: 2000;
+						stroke-dashoffset: 2000;
+						animation: ani1 5s linear forwards;
+					}
+					.second-ani{
+						stroke-dasharray: 2000;
+						stroke-dashoffset: 2000;
+						animation: ani1 5s linear forwards 3s;
+					}
+					.third-ani{
+						stroke-dasharray: 2000;
+						stroke-dashoffset: 2000;
+						animation: ani1 5s linear forwards 4.5s;
+					}
+					.fourth-ani{
+						stroke-dasharray: 2000;
+						stroke-dashoffset: 2000;
+						animation: ani1 5s linear forwards 7.5s;
+					}
+					.st2,
+					.st4{
+						stroke: #fff;
+						animation: bg 2s ease 10s;
+					}
+					.s2-a1{
+						animation: ani1 5s linear forwards, bg 2s ease 9.5s infinite;
+					}
+					.s2-a3{
+						animation: ani1 5s linear forwards 4.5s, bg 2s ease 9.5s infinite;
+					}
+					.s4-a4{
+						animation: ani1 5s linear forwards 7.5s, bg 2s ease 9.5s infinite;
+					}
+					.s4-a2{
+						animation: ani1 5s linear forwards 3s, bg 2s ease 9.5s infinite;
+					}
+					@keyframes ani1{
+						from{
+							stroke-dashoffset: 2000;
+						}
+						to{
+							stroke-dashoffset: 0;
+						}
+					}
+					@keyframes bg{
+						from{
+							stroke: #fff;
+						}
+						to{
+							stroke: #f00;
+						}
+					}
+				</style>
+			</defs>
+			<rect  class="st0" width="610" height="600"/>
+			<g transform="translate(-94,724.5) scale(1.3,-1.3)">
+				<g>
+					<path id="SquareKnotPOne" class="st1 first-ani" d="M486,526h-64.4c-46.6,0-84.4-37.8-84.4-84.4c0-46.6,37.8-84.4,84.4-84.4l51.5,0
+						C458,437.7,387.8,496,306,496s-152-58.3-167.1-138.7h51.5c46.6,0,84.4,37.8,84.4,84.4c0,46.6-37.8,84.4-84.4,84.4H126"/>
+				</g>
+				<g>
+					<path id="SquareKnotPOne_1_" class="st2 first-ani s2-a1" d="M486,526h-64.4c-46.6,0-84.4-37.8-84.4-84.4c0-46.6,37.8-84.4,84.4-84.4l51.5,0
+						C458,437.7,387.8,496,306,496s-152-58.3-167.1-138.7h51.5c46.6,0,84.4,37.8,84.4,84.4c0,46.6-37.8,84.4-84.4,84.4H126"/>
+				</g>
+				<g>
+					<path id="SquareKnotPTwo" class="st1 third-ani" d="M486,126h-64.4c-46.6,0-84.4,37.8-84.4,84.4c0,46.6,37.8,84.4,84.4,84.4h51.5
+						C458,214.3,387.8,156,306,156s-152,58.3-167.1,138.7l51.5,0c46.6,0,84.4-37.8,84.4-84.4c0-46.6-37.8-84.4-84.4-84.4H126"/>
+				</g>
+				<g>
+					<path id="SquareKnotPTwo_1_" class="st2 third-ani s2-a3" d="M486,126h-64.4c-46.6,0-84.4,37.8-84.4,84.4c0,46.6,37.8,84.4,84.4,84.4h51.5
+						C458,214.3,387.8,156,306,156s-152,58.3-167.1,138.7l51.5,0c46.6,0,84.4-37.8,84.4-84.4c0-46.6-37.8-84.4-84.4-84.4H126"/>
+				</g>
+				<g>
+					<path class="st3 fourth-ani" d="M146,126h-40l400,400h-40"/>
+					<path class="st4 fourth-ani s4-a4" d="M147,126h-41l400,400h-41"/>
+					<path class="st3 second-ani" d="M146,526h-40l400-400h-40"/>
+					<path class="st4 second-ani s4-a2" d="M147,526h-41l400-400h-41"/>
+				</g>
+			</g>
+		</svg>
+	</div>
+</body>
+</html>
